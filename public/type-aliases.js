@@ -1,7 +1,7 @@
 "use strict";
-var detalis = function (uuid, item) {
-    console.log(item + " has a uuid of " + uuid);
+const detalis = (uuid, item) => {
+    console.log(`${item} has a uuid of ${uuid}`);
 };
-var user = function (user) {
-    console.log(user.name + " says hi");
+const user = (user) => {
+    console.log(`${user.name} says hi`);
 };
