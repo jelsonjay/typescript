@@ -1,43 +1,32 @@
-// Interfaces
-interface IsPerson{
-name: string;
-age: number;
-gender: string;
-speak(a: string): void;
-spend(a: number): number;
-}
-
-const me: IsPerson = {
-  name: 'Jelson J',
-  age: 32,
-  gender: 'male',
-  speak(text: string):void{
-  console.log(text)
-  },
-  spend(amount: number): number{
-  console.log('I spent' , amount)
-  return amount
-  },
-}
-console.log(me)
-
-
 // import invoice
 import {Invoice} from  './classes/Invoice.js'
-import {Payment} from  './Intercafe/Payment'
+import {Payment} from  './Intercafe/Payment.js'
 import {HasFormatter} from './Intercafe/HasFormatter.js'
+import { ListTemplate } from './classes/ListTemplate.js';
 
-const invOne = new Invoice('renata', 'work on the new project', 352)
 
-const invTwo = new Invoice('nadal', 'won new game', 452)
+// let docOne: HasFormatter;
+// let docTwo: HasFormatter;
 
-let invoice: Invoice[] = []
-invoice.push(invOne)
-invoice.push(invTwo)
+// docOne = new Invoice('jeje', 'tester', 350)
+// docTwo = new Invoice('geny ramos', 'tennis player', 150)
 
-invoice.forEach(inv => {
-console.log(inv.client, inv.amount, inv.format())
-})
+
+// let docs: HasFormatter[] = []
+// docs.push(docOne)
+// docs.push(docTwo)
+
+
+// const invOne = new Invoice('renata', 'work on the new project', 352)
+// const invTwo = new Invoice('nadal', 'won new game', 452)
+
+// let invoice: Invoice[] = []
+// invoice.push(invOne)
+// invoice.push(invTwo)
+
+// invoice.forEach(inv => {
+// console.log(inv.client, inv.amount, inv.format())
+// })
 
 const form = document.querySelector('.new-item-form') as HTMLFormElement
 //console.log(form.children)
@@ -49,14 +38,22 @@ const details = document.querySelector('#details') as HTMLInputElement
 const amount = document.querySelector('#amount') as HTMLInputElement
 
 
+// list template
+const ul = document.querySelector('ul')!
+const list = new ListTemplate(ul)
+
 form.addEventListener('submit', (e: Event)=>{
   e.preventDefault()
-  console.log(
-    type.value,
-    tofrom.value,
-    details.value,
-    amount.valueAsNumber
-  )
+
+  let doc: HasFormatter
+  if(type.value === 'invoice'){
+  doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber)
+  }else{
+  doc = new Payment(tofrom.value, details.value, amount.valueAsNumber)
+  }
+
+  list.render(doc, type.value, 'end')
+  //console.log(doc)
 })
 
 
