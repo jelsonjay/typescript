@@ -1,3 +1,4 @@
+"use strict";
 //=======varable======
 var myName;
 var age;
@@ -30,3 +31,11 @@ ano = ['banana', 'apple', 'orange'];
 console.log(ano, '========Array=======');
 ano = { name: 'jemol', age: 9, job: 'student' };
 console.log(ano, '========Object=========');
+var mixed = [];
+mixed.push('paris');
+mixed.push(true);
+mixed.push('Welcom');
+console.log(mixed, '========Array Mixed=======');
+var obj;
+obj = { name: 'Jelson J', age: 25, gender: 'male' };
+console.log(obj, '========Object Mixed=======');

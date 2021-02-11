@@ -34,3 +34,14 @@ ano = ['banana', 'apple', 'orange']
 console.log(ano, '========Array=======')
 ano =  {name:'jemol', age:9, job: 'student'}
 console.log(ano, '========Object=========')
+
+let mixed: any[] = []
+mixed.push('paris')
+mixed.push(true)
+mixed.push('Welcom')
+console.log(mixed, '========Array Mixed=======')
+
+
+let obj: {name: any, age: any, gender: any} 
+obj = {name:'Jelson J', age: 25, gender: 'male'}
+console.log(obj, '========Object Mixed=======')
