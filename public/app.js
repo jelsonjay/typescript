@@ -2,6 +2,11 @@
 //=======varable======
 let myName;
 let age;
+let gender;
+let bool;
+myName = 'London';
+age = 25;
+gender = 'male';
 //=======array========
 let isBoo;
 let contries = [];

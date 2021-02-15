@@ -1,7 +1,13 @@
 
 //=======varable======
 let myName: string;
-let age: number
+let age: number;
+let gender: string
+let bool: true;
+
+myName = 'London'
+age = 25
+gender = 'male'
 
 //=======array========
 let isBoo: true
@@ -19,6 +25,7 @@ let mynew: number|string
 mynew = 8
 console.log(mynew)
 console.log(mix)
+
 //======objects=====
 let mixe: object
 mixe = {name: 'jo' , age: 85}
