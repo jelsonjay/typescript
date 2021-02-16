@@ -1,3 +1,3 @@
-# TypeScript Alternative to JavaScript Superset
+# TypeScript the alternative to JavaScript superset
 
 learn typescript, all valid javascript code is also typescript code. 
