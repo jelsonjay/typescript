@@ -1,3 +1,3 @@
 # TypeScript the alternative to javascript superset
 
-learn typescript, all valid JavaScript  code is also TypeScript code
+learn typescript, all valid javascrip  code is also TypeScript code
