@@ -2,4 +2,5 @@
 
 
 
-learn TypeScipt, all valid javascript code is also TypeScript code
+learn TypeScipt, all valid JavaScript
+code is also TypeScript code
