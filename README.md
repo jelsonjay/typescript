@@ -2,6 +2,6 @@
 
 
 
-learn TypeScipt, all valid JavaScript
+learn TypeScipt, all valid avascript
 
 code is also TypeScript code
