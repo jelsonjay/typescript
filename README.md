@@ -1,4 +1,4 @@
-# TypeScript the alternative to javascript superset
+# TypeScript the alternative to JavaScript superset
 
 
 
