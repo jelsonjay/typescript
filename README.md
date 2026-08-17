@@ -2,6 +2,6 @@
 
 
 
-learn TypeScript, all valid javascript
+learn TypeScript, all valid JavaScript
 
 code is also TypeScript code
